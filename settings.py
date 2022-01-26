@@ -5,7 +5,7 @@ import os
 COMMAND_PREFIX = "!Miko "
 
 # The bot token. Keep this secret!
-BOT_TOKEN = "ODgwNTYyMzcxNjkxNjg3OTU4.YSgFnQ.rpoTCm_vT7nEO1TY1qRayXxu6Hg"
+BOT_TOKEN = ""
 
 # The now playing game. Set this to anything false-y ("", None) to disable it
 NOW_PLAYING = "Minecraft"
