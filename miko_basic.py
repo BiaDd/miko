@@ -134,6 +134,5 @@ async def on_message(message):
 
 # ---------------------------------------------------------------------------------------------------------------------------
 #keep_alive()
-#client.run(os.getenv('ODgwNTYyMzcxNjkxNjg3OTU4.YSgFnQ.rpoTCm_vT7nEO1TY1qRayXxu6Hg'))
 
-client.run(('ODgwNTYyMzcxNjkxNjg3OTU4.YSgFnQ.rpoTCm_vT7nEO1TY1qRayXxu6Hg'))
+client.run((''))

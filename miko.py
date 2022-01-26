@@ -10,18 +10,15 @@ client = discord.Client()
 isActive = True
 
 game_list = [
-    "Super Mario World 2: Yoshi's Island",
-    "Yoshi's Story",
-    "Yoshi's Universal Gravitation",
-    "Yoshi Touch & Go",
-    "Yoshi's Island DS",
-    "Yoshi's New Island",
-    "Yoshi's Woolly World",
-    "Yoshi's Crafted World",
+    "Ghost of Tsushima",
+    "Animal Crossing: New Horizons",
+    "Monster Hunter: World",
+    "Yakuza 0",
     "VALORANT",
     "League of Legends",
 ]
 
+"""
 insults_keywords = [
     'crazy',
     'funny',
@@ -75,7 +72,7 @@ roast_blacklist = [
 
 whitelist = [
     "333025781309767684",
-]
+]"""
 
 
 # ---------------------------------------------------------------------------------------------------------------------------
@@ -87,9 +84,6 @@ def random_song_status():
     return discord.Activity(type=discord.ActivityType.listening, name="Spotify")
 
 
-def get_insults(word):
-    return random.choice(insults_output) + word
-
 
 def get_insp_quote(person):
     omit = ["i", "me", "he", "she", "her", "him"]
@@ -99,15 +93,6 @@ def get_insp_quote(person):
     inspire = "{0}".format(quote)
     return person.capitalize() + ". " + inspire if person.lower() not in omit else "" + inspire
 
-
-def get_roasted(person):
-    omit = ["天", "yoshii", "yoshi", "i", "me", "he", "she", "her", "him", "thien", "aden", "thein", "thienn", "adenn",
-            "theinn"]
-    repsonses = ["nah", "no", "try again", "wut"]
-    if person.lower() in omit:
-        return random.choice(repsonses)
-    else:
-        return requests.get("https://insult.mattbas.org/api/en/insult.txt?who=" + person.capitalize()).text
 
 
 def photo_searcher_cat():
